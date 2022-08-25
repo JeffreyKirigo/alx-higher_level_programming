@@ -2,4 +2,4 @@
 for letters in range(122, 96, -1):
     if letters % 2 != 0:
         letters = letters - 32
-    print(f"{chr(letters)}", end="")
+    print("{}".format(chr(letters)), end="")
