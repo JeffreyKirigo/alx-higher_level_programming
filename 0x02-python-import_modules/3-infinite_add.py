@@ -9,4 +9,4 @@ if __name__ == "__main__":
     if count != 0:
         for i in range(count):
             total += int(argv[i + 1])
-        print("{}".format(total))
+        print("{}\n".format(total))
