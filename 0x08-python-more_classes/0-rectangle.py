@@ -3,6 +3,6 @@
 """Define a class Rectangle."""
 
 
-Class Rectangle:
+class Rectangle:
     """Rectangle."""
     pass
