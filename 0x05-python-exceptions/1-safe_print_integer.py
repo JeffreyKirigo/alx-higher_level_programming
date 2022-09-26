@@ -9,9 +9,8 @@ def safe_print_integer(value):
     Returns:
         True if value has been correctly printed
     """
-    while isinstance(value, int):
-        try:
-            print("{:d}".format(value))
-            return True
-        except (TypeError, ValueError):
-            return False
+    try:
+        print("{:d}".format(value))
+        return (True)
+    except (TypeError, ValueError):
+        return (False)
