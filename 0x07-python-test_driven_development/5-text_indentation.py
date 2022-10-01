@@ -24,7 +24,7 @@ def text_indentation(text):
                 print("\n")
         else:
             if x == " ":
-                checker = False
+                checker = True
                 continue
             else:
                 print(x, end="")
