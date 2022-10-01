@@ -17,7 +17,7 @@ def text_indentation(text):
         raise TypeError("text must be a string")
 
     for x in text:
-        if checker == False:
+        if not checker:
             print("{}".format(x), end="")
             if x in special:
                 checker = True
