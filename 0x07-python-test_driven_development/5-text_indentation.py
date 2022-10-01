@@ -27,5 +27,5 @@ def text_indentation(text):
                 checker = False
                 continue
             else:
-                checker = False
                 print(x, end="")
+                checker = False
