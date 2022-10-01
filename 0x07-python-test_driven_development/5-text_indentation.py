@@ -26,3 +26,7 @@ def text_indentation(text):
             if x == " ":
                 checker = False
                 continue
+            else:
+                checker = False
+                print(x)
+    print("\n")
