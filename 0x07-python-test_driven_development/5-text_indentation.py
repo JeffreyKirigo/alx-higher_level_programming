@@ -18,10 +18,11 @@ def text_indentation(text):
 
     for x in text:
         if not checker:
-            print("{}".format(x), end="")
+            print(x, end="")
             if x in special:
                 checker = True
                 print("\n")
         else:
-            checker = False
-            continue
+            if x == " ":
+                checker = False
+                continue
