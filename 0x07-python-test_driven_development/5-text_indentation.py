@@ -12,10 +12,16 @@ def text_indentation(text):
         Nothing
     """
     special = [".", "?", ":"]
-
+    checker = False
     if type(text) != str:
         raise TypeError("text must be a string")
-    for x in range(len(text)):
-        print(text[x], end="")
-        if text[x] in special:
-            print("\n\n", end="")
+
+    for x in text:
+        if checker == False:
+            print("{}".format(x), end="")
+            if x in special:
+                checker = True
+                print("\n")
+        else:
+            checker = False
+            continue

@@ -9,12 +9,12 @@ Import the module
 	>>> text_indentation = __import__('5-text_indentation').text_indentation
 
 #Normal addition test
-	>>> text_indentation("Lorem Ipsum.?:")
+	>>> text_indentation("Lorem Ipsum. Lorem? Lorem:")
 	Lorem Ipsum.
 	<BLANKLINE>
-	?
+	Lorem?
 	<BLANKLINE>
-	:
+	Lorem:
 	<BLANKLINE>
 
 ::
@@ -29,13 +29,4 @@ Import the module
 	>>> text_indentation({"Name": 'Jeffrey', "id":565123})
 	Traceback (most recent call last):
 	TypeError: text must be a string
-
-	>>> text_indentation("hellow : Jumbo . Market ? Boy")
-	hellow :
-    	<BLANKLINE>
-     	 Jumbo .
-    	<BLANKLINE>
-     	 Market ?
-    	<BLANKLINE>
-     	 Boy
 
