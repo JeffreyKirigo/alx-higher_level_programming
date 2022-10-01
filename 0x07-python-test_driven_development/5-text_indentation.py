@@ -28,5 +28,4 @@ def text_indentation(text):
                 continue
             else:
                 checker = False
-                print(x)
-    print("\n")
+                print(x, end="")
