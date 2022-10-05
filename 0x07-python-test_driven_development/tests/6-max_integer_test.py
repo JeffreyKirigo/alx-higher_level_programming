@@ -15,6 +15,10 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([0, 0, 0, 0]), 0)
         self.assertEqual(max_integer([1, 2, 3, 4]), 4)
 
+    def test_max_beginning(self):
+        """Test max integer at beginning"""
+        self.assertEqual(max_integer([5, 4, 3, 2]), 5)
+
     def test_floats(self):
         """ Tests a list of float numbers."""
         self.assertEqual(max_integer([1.53, 6.33, -9.123, 15.2, 6.0]), 15.2)
