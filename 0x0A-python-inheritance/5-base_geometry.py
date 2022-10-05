@@ -5,7 +5,6 @@
 class BaseGeometry:
     """Class for Base Geometry"""
 
-
     def __init__(self):
         """Initilization
 
