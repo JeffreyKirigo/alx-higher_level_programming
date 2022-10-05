@@ -3,6 +3,16 @@
 
 
 class BaseGeometry:
+    """Class for Base Geometry"""
+
+
     def __init__(self):
-        """Initilization"""
+        """Initilization
+
+        Args:
+            self: self referential
+
+        Returns:
+            Nothing
+        """
         pass
