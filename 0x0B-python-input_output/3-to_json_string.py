@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import json
 """Define method"""
+import json
 
 
 def to_json_string(my_obj):
