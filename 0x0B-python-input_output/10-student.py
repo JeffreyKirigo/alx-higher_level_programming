@@ -19,8 +19,7 @@ class Student:
         Args:
             attrs (list): list of  strings for specific attr
         """
-        if (type(attrs) == list and all(type(elements) == str for elements in attrs)):
-            for x in attrs:
-                if hasattr(self,x):
-                    return {x: getattr(self, x)}
+        if (type(attrs) == list and
+                all(isinstance(elements, str) for elements in attrs)):
+            return {x: getattr(self, x) for x in attrs if hasattr(self, x)}
         return self.__dict__
