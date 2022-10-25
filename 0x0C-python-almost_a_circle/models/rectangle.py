@@ -93,6 +93,26 @@ class Rectangle(Base):
                 print(symbol, end="")
             print()
 
+    def update(self, *args):
+        if args and len(args) is not 0:
+            pos = 0
+            for arg in args:
+                if pos == 0:
+                    if arg is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = arg
+                elif pos == 1:
+                    self.width = arg
+                elif pos == 2:
+                    self.height = arg
+                elif pos == 3:
+                    self.x = arg
+                elif pos == 4:
+                    self.y = arg
+                pos += 1
+                
+
     def __str__(self):
         return "[{}] ({}) {}/{} - {}/{}".format(__class__.__name__,
                                                 self.id, self.x,
