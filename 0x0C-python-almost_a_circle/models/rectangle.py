@@ -94,6 +94,7 @@ class Rectangle(Base):
             print()
 
     def update(self, *args):
+        """Update"""
         if args and len(args) is not 0:
             pos = 0
             for arg in args:
@@ -111,7 +112,6 @@ class Rectangle(Base):
                 elif pos == 4:
                     self.y = arg
                 pos += 1
-                
 
     def __str__(self):
         return "[{}] ({}) {}/{} - {}/{}".format(__class__.__name__,
