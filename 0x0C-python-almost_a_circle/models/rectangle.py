@@ -50,3 +50,33 @@ class Rectangle(Base):
     def height(self):
         """Deleter"""
         del self.__height
+
+    @property
+    def x(self):
+        """getter"""
+        return self.__x
+
+    @x.setter
+    def x(self, value):
+        """Setter"""
+        self.__x = value
+
+    @x.deleter
+    def x(self):
+        """Deleter"""
+        del self.__x
+
+    @property
+    def y(self):
+        """getter"""
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        """Setter"""
+        self.__y = value
+
+    @y.deleter
+    def y(self):
+        """Deleter"""
+        del self.__y
