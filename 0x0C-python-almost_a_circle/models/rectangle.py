@@ -84,7 +84,11 @@ class Rectangle(Base):
     def display(self):
         """Display rectangle with '#'"""
         symbol = "#"
+        for y in range(self.y):
+            print()
         for h in range(self.height):
+            for x in range(self.x):
+                print(" ", end="")
             for w in range(self.width):
                 print(symbol, end="")
             print()
