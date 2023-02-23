@@ -12,7 +12,7 @@ class Rectangle {
     for (let i = 1; i <= this.height; i++) {
       let space = '';
       for (let j = 1; j <= this.width; j++) {
-        space += '#';
+        space += 'X';
       }
       console.log(space);
     }
