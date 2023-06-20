@@ -14,9 +14,9 @@ if __name__ == "__main__":
 
     cur = db_conn.cursor()
     cur.execute("""SELECT * FROM states
-                WHERE name = '{find}' ORDER BY id
+                WHERE name LIKE '{}' ORDER BY id
                 """
-                .format(find=sys.argv[4]))
+                .format(sys.argv[4]))
     rows = cur.fetchall()
     for row in rows:
         print(row)
