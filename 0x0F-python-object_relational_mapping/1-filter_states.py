@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     cur = db_conn.cursor()
     cur.execute("""
-                SELECT * FROM states WHERE name like 'N%'
+                SELECT * FROM states WHERE name LIKE BINARY 'N%'
                 ORDER BY states.id
                 """)
     rows = cur.fetchall()
