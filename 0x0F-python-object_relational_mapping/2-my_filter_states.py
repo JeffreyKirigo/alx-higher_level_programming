@@ -13,7 +13,9 @@ if __name__ == "__main__":
                               port=3306)
 
     cur = db_conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name = '{find}'"
+    cur.execute("""SELECT * FROM states
+                WHERE name = '{find}' ORDER BY id
+                """
                 .format(find=sys.argv[4]))
     rows = cur.fetchall()
     for row in rows:
