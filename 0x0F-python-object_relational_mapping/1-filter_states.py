@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-    List all states
+    List all states and filter where name starts with N
+    Ordered by state ID
 """
 import MySQLdb
 import sys
