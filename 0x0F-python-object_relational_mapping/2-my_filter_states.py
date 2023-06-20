@@ -13,8 +13,8 @@ if __name__ == "__main__":
                               port=3306)
 
     cur = db_conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE '{find}'"
-               .format(find=sys.argv[4]))
+    cur.execute("SELECT * FROM states WHERE name = '{find}'"
+                .format(find=sys.argv[4]))
     rows = cur.fetchall()
     for row in rows:
         print(row)
