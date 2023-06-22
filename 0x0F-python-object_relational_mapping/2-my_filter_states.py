@@ -13,10 +13,9 @@ if __name__ == "__main__":
                               port=3306)
 
     cur = db_conn.cursor()
-    find = sys.argv[4]
-    cur.execute("""SELECT * FROM states
-                WHERE name LIKE %s ORDER BY id
-                """, (find, ))
+    query = "SELECT * FROM states WHERE name LIKE %s ORDER BY id"
+    find = "{}".format(sys.argv[4])
+    cur.execute(query, (find, ))
     rows = cur.fetchall()
     for row in rows:
         print(row)
