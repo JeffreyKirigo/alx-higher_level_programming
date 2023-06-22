@@ -16,8 +16,7 @@ if __name__ == "__main__":
     find = sys.argv[4]
     cur.execute("""SELECT * FROM states
                 WHERE name LIKE %s ORDER BY id
-                """
-                ,(find, ))
+                """, (find, ))
     rows = cur.fetchall()
     for row in rows:
         print(row)
