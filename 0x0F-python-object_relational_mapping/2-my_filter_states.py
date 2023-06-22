@@ -13,7 +13,7 @@ if __name__ == "__main__":
                               port=3306)
 
     cur = db_conn.cursor()
-    find = "{}".format(sys.argv[4])
+    find = sys.argv[4]
     cur.execute("SELECT * FROM states WHERE name LIKE %s", (find, ))
     rows = cur.fetchall()
     for row in rows:
