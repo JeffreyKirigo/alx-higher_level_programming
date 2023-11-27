@@ -1,2 +1,0 @@
--- DELETE RECORD WITH RANGE
-DELETE FROM second_table WHERE score <= 5;
